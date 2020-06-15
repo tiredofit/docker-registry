@@ -1,0 +1,11 @@
+#!/usr/bin/with-contenv bash
+
+source /assets/functions/00-container
+PROCESS_NAME="registry"
+
+check_container_initialized
+check_service_initialized init
+liftoff
+
+print_info "Starting Docker registry"
+exec registry serve /etc/docker/registry/config.yml 2>&1 >>/var/log/registry/registry.log | tee /var/log/registry/registry.log
