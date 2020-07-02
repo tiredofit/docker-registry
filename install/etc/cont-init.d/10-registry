@@ -1,0 +1,14 @@
+source /assets/functions/00-container
+prepare_service
+PROCESS_NAME="registry"
+
+if [ "${LOG_TYPE}" = "FILE" ] || [ "${LOG_TYPE}" = "file" ] ; then
+    print_notice "Setting logging to file ${LOG_PATH}${LOG_FILE}"
+    print_debug "Creating log directory"
+    mkdir -p ${LOG_PATH}
+    touch ${LOG_PATH}${LOG_FILE}
+    sed -i "s#<LOG_PATH>|${LOG_PATH}|g" /etc/logrotate.d/registry
+else
+    print_notice "Setting logging to console"
+    rm -rf /etc/logrotate.d/registry
+fi

@@ -1,8 +1,7 @@
-FROM registry.selfdesign.org/docker/alpine/3.12:latest
+FROM tiredofit/alpine:3.12
 LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
 
-ENV ENABLE_CRON=FALSE \
-    ENABLE_SMTP=FALSE \
+ENV ENABLE_SMTP=FALSE \
     ZABBIX_HOSTNAME=docker-registry
 
 RUN set -x && \

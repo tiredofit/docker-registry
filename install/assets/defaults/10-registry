@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+LOG_TYPE=${LOG_TYPE:-"FILE"}
+LOG_PATH=${LOG_PATH:-"/logs/"}
+LOG_FILE=${LOG_FILE:-"registry.log"}

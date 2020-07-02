@@ -6,7 +6,7 @@
 [![Docker Layers](https://images.microbadger.com/badges/image/tiredofit/registry.svg)](https://microbadger.com/images/tiredofit/registry)
 
 
-# Introduction
+## Introduction
 
 This will build a Docker container for Docker Registry 
         
@@ -15,11 +15,11 @@ This Container uses [tiredofit:alpine:3.12](https://hub.docker.com/r/tiredofit/a
 
 [Changelog](CHANGELOG.md)
 
-# Authors
+## Authors
 
 - [Dave Conroy](https://github.com/tiredofit)
 
-# Table of Contents
+## Table of Contents
 
 - [Introduction](#introduction)
     - [Changelog](CHANGELOG.md)
@@ -34,7 +34,7 @@ This Container uses [tiredofit:alpine:3.12](https://hub.docker.com/r/tiredofit/a
     - [Shell Access](#shell-access)
    - [References](#references)
 
-# Prerequisites
+## Prerequisites
 
 This image assumes that you are using a reverse proxy such as 
 [jwilder/registry-proxy](https://github.com/jwilder/registry-proxy) and optionally the [Let's Encrypt Proxy 
@@ -43,7 +43,7 @@ https://github.com/JrCs/docker-letsencrypt-registry-proxy-companion](https://git
 in order to serve your pages. However, it will run just fine on it's own if you map appropriate ports.
 
 
-# Installation
+## Installation
 
 Automated builds of the image are available on [Docker Hub](https://hub.docker.com/r/tiredofit/registry) and is the recommended method of installation.
 
@@ -52,7 +52,7 @@ Automated builds of the image are available on [Docker Hub](https://hub.docker.c
 docker pull tiredofit/registry
 ```
 
-# Quick Start
+### Quick Start
 
 * The quickest way to get started is using [docker-compose](https://docs.docker.com/compose/). See the examples folder for a working [docker-compose.yml](examples/docker-compose.yml) that can be modified for development or production use.
 
@@ -62,7 +62,7 @@ docker pull tiredofit/registry
 
 
 
-# Configuration
+## Configuration
 
 ### Data-Volumes
 
@@ -85,8 +85,8 @@ The following ports are exposed.
 | `5000`    | Registry    |
 
 
-# Maintenance
-#### Shell Access
+## Maintenance
+### Shell Access
 
 For debugging and maintenance purposes you may want access the containers shell. 
 
@@ -94,7 +94,7 @@ For debugging and maintenance purposes you may want access the containers shell.
 docker exec -it (whatever your container name is e.g. registry) bash
 ```
 
-# References
+## References
 
 * https://docker.com/
 

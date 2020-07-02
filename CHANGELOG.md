@@ -1,3 +1,9 @@
+## 1.4.0 2020-07-02 <dave at tiredofit dot ca>
+
+   ### Added
+      - Add LOG_TYPE environment variables to choose which way you wish to log (File or Console)
+
+
 ## 1.3.3 2020-06-05 <dave at tiredofit dot ca>
 
    ### Changed
