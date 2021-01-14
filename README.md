@@ -8,8 +8,8 @@
 
 ## Introduction
 
-This will build a Docker container for Docker Registry 
-        
+This will build a Docker container for Docker Registry
+
 This Container uses [tiredofit:alpine:3.12](https://hub.docker.com/r/tiredofit/alpine) as a base.
 
 
@@ -22,24 +22,25 @@ This Container uses [tiredofit:alpine:3.12](https://hub.docker.com/r/tiredofit/a
 ## Table of Contents
 
 - [Introduction](#introduction)
-    - [Changelog](CHANGELOG.md)
+- [Authors](#authors)
+- [Table of Contents](#table-of-contents)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Quick Start](#quick-start)
+  - [Quick Start](#quick-start)
 - [Configuration](#configuration)
-    - [Data Volumes](#data-volumes)
-    - [Environment Variables](#environmentvariables)   
-    - [Networking](#networking)
+  - [Data-Volumes](#data-volumes)
+  - [Environment Variables](#environment-variables)
+  - [Networking](#networking)
 - [Maintenance](#maintenance)
-    - [Shell Access](#shell-access)
-   - [References](#references)
+  - [Shell Access](#shell-access)
+- [References](#references)
 
 ## Prerequisites
 
-This image assumes that you are using a reverse proxy such as 
-[jwilder/registry-proxy](https://github.com/jwilder/registry-proxy) and optionally the [Let's Encrypt Proxy 
-Companion @ 
-https://github.com/JrCs/docker-letsencrypt-registry-proxy-companion](https://github.com/JrCs/docker-letsencrypt-registry-proxy-companion) 
+This image assumes that you are using a reverse proxy such as
+[jwilder/registry-proxy](https://github.com/jwilder/registry-proxy) and optionally the [Let's Encrypt Proxy
+Companion @
+https://github.com/JrCs/docker-letsencrypt-registry-proxy-companion](https://github.com/JrCs/docker-letsencrypt-registry-proxy-companion)
 in order to serve your pages. However, it will run just fine on it's own if you map appropriate ports.
 
 
@@ -68,27 +69,32 @@ docker pull tiredofit/registry
 
 The following directories are used for configuration and can be mapped for persistent storage.
 
-| Directory    | Description                                                 |
-|--------------|-------------------------------------------------------------|
-|  `/var/lib/registry` | Images |
-| `/var/log/registry` | Logs (Optional)
+| Directory           | Description     |
+| ------------------- | --------------- |
+| `/var/lib/registry` | Images          |
+| `/logs/`            | Logs (Optional) |
 
 ### Environment Variables
 
+| Directory  | Description                      | Default        |
+| ---------- | -------------------------------- | -------------- |
+| `LOG_TYPE` | Logging type `FILE` or `CONSOLE` | `FILE`         |
+| `LOG_PATH` | Log Path                         | `/logs/`       |
+| `LOG_FILE` | Log Filename                     | `registry.log` |
 
 ### Networking
 
 The following ports are exposed.
 
-| Port      | Description |
-|-----------|-------------|
-| `5000`    | Registry    |
+| Port   | Description |
+| ------ | ----------- |
+| `5000` | Registry    |
 
 
 ## Maintenance
 ### Shell Access
 
-For debugging and maintenance purposes you may want access the containers shell. 
+For debugging and maintenance purposes you may want access the containers shell.
 
 ```bash
 docker exec -it (whatever your container name is e.g. registry) bash
@@ -97,7 +103,3 @@ docker exec -it (whatever your container name is e.g. registry) bash
 ## References
 
 * https://docker.com/
-
-
-
-
