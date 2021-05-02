@@ -1,6 +1,5 @@
 # hub.docker.com/r/tiredofit/registry
 
-[![Build Status](https://img.shields.io/docker/build/tiredofit/registry.svg)](https://hub.docker.com/r/tiredofit/registry)
 [![Docker Pulls](https://img.shields.io/docker/pulls/tiredofit/registry.svg)](https://hub.docker.com/r/tiredofit/registry)
 [![Docker Stars](https://img.shields.io/docker/stars/tiredofit/registry.svg)](https://hub.docker.com/r/tiredofit/registry)
 [![Docker Layers](https://images.microbadger.com/badges/image/tiredofit/registry.svg)](https://microbadger.com/images/tiredofit/registry)
