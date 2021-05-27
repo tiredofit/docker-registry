@@ -1,3 +1,9 @@
+## 1.5.1 2021-05-27 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Fix environment variable naming as it was crashing registry
+
+
 ## 1.5.0 2021-05-27 <dave at tiredofit dot ca>
 
    ### Added

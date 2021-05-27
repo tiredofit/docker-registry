@@ -17,5 +17,5 @@ fi
 
 liftoff
 
-print_info "Starting Docker registry ${REGISTRY_VERSION}"
+print_info "Starting Docker registry ${DOCKER_REGISTRY_VERSION}"
 exec registry serve /etc/docker/registry/config.yml 2>&1 >>${log_path}${log_file}
