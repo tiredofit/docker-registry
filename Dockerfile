@@ -1,10 +1,10 @@
-FROM tiredofit/alpine:3.13
-LABEL maintainer="Dave Conroy (dave at tiredofit dot ca)"
+FROM docker.io/tiredofit/alpine:3.14
+LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
 ENV DOCKER_REGISTRY_VERSION=v2.7.1 \
     DOCKER_REGISTRY_SOURCE_REPO=https://github.com/distribution/distribution/ \
-    ENABLE_SMTP=FALSE \
-    ZABBIX_HOSTNAME=docker-registry
+    CONTAINER_ENABLE_MESSAGING=FALSE \
+    CONTAINER_NAME=docker-registry
 
 RUN set -x && \
     apk update && \
