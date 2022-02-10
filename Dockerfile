@@ -4,7 +4,8 @@ LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 ENV DOCKER_REGISTRY_VERSION=v2.7.1 \
     DOCKER_REGISTRY_SOURCE_REPO=https://github.com/distribution/distribution/ \
     CONTAINER_ENABLE_MESSAGING=FALSE \
-    CONTAINER_NAME=docker-registry
+    IMAGE_NAME="tiredofit/registry" \
+    IMAGE_REPO_URL="https://github.com/tiredofit/docker-registry/"
 
 RUN set -x && \
     apk update && \
