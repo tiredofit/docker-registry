@@ -1,3 +1,9 @@
+## 1.5.5 2022-04-26 <dave at tiredofit dot ca>
+
+   ### Changed
+      - Update logrotate directory
+
+
 ## 1.5.4 2022-02-09 <dave at tiredofit dot ca>
 
    ### Changed
