@@ -1,3 +1,10 @@
+## 1.5.6 2022-05-24 <dave at tiredofit dot ca>
+
+   ### Added
+      - Docker Registry 2.8.1
+      - Alpine 3.16 base
+
+
 ## 1.5.5 2022-04-26 <dave at tiredofit dot ca>
 
    ### Changed
