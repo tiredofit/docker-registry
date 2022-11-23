@@ -1,4 +1,4 @@
-FROM docker.io/tiredofit/alpine:3.16
+FROM docker.io/tiredofit/alpine:3.17
 LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
 ENV DOCKER_REGISTRY_VERSION=v2.8.1 \
@@ -33,4 +33,4 @@ VOLUME ["/var/lib/registry"]
 EXPOSE 5000
 
 ### Add Files
-ADD install /
+COPY install /
