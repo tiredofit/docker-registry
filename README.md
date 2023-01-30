@@ -59,7 +59,7 @@ docker pull docker.io/tiredofdit/registry:(imagetag)
 Builds of the image are also available on the [Github Container Registry](https://github.com/tiredofit/docker-registry/pkgs/container/docker-registry) 
  
 ```
-docker pull ghcr.io/tiredofit/docker-registry/pkgs/container/docker-registry):(imagetag)
+docker pull ghcr.io/tiredofit/docker-registry:(imagetag)
 ``` 
 
 The following image tags are available along with their tagged release based on what's written in the [Changelog](CHANGELOG.md):
