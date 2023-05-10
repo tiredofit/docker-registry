@@ -7,7 +7,8 @@ ENV DOCKER_REGISTRY_VERSION=v2.8.1 \
     IMAGE_NAME="tiredofit/registry" \
     IMAGE_REPO_URL="https://github.com/tiredofit/docker-registry/"
 
-RUN set -x && \
+RUN source /assets/functions/00-container && \
+    set -x && \
     package update && \
     package upgrade && \
     package install .registry-build-deps \
