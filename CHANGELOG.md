@@ -1,3 +1,9 @@
+## 1.5.10 2023-05-11 <dave at tiredofit dot ca>
+
+   ### Added
+      - Registry 2.8.2
+
+
 ## 1.5.9 2023-05-10 <dave at tiredofit dot ca>
 
    ### Added

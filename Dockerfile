@@ -1,7 +1,7 @@
 FROM docker.io/tiredofit/alpine:3.18
 LABEL maintainer="Dave Conroy (github.com/tiredofit)"
 
-ENV DOCKER_REGISTRY_VERSION=v2.8.1 \
+ENV DOCKER_REGISTRY_VERSION=v2.8.2 \
     DOCKER_REGISTRY_SOURCE_REPO=https://github.com/distribution/distribution/ \
     CONTAINER_ENABLE_MESSAGING=FALSE \
     IMAGE_NAME="tiredofit/registry" \
