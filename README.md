@@ -53,7 +53,7 @@ Clone this repository and build the image with `docker build -t (imagename) .`
 Builds of the image are available on [Docker Hub](https://hub.docker.com/r/tiredofit/registry)
 
 ```bash
-docker pull docker.io/tiredofdit/registry:(imagetag)
+docker pull docker.io/tiredofit/registry:(imagetag)
 ```
 
 Builds of the image are also available on the [Github Container Registry](https://github.com/tiredofit/docker-registry/pkgs/container/docker-registry) 
